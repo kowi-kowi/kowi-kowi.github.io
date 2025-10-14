@@ -7,113 +7,141 @@
     <title>Template Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
+    font-family: "Inter", "Roboto", sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    margin: 0;
+    padding: 2rem;
+}
 
-        .main-container {
-            width: 80%;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            /* Adds 20px space from the top */
-        }
+.portfolio {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-        .top-div {
-            font-family: Arial, sans-serif;
-            color: gray;
-            margin-bottom: 20px;
-        }
+.intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 
-        table {
-            width: 100%;
-            border-spacing: 10px;
-        }
+.intro h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
 
-        td {
-            padding: 10px;
-        }
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+}
 
-        img {
-            width: 80px;
-            /* Fixed width */
-            height: 80px;
-            /* Fixed height */
-            object-fit: cover;
-            /* Ensures the image is not distorted */
-        }
-        p {
-            font-family: Arial, sans-serif;
-            color: gray;
-        }
-    </style>
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card p, .card ul {
+    text-align: center;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 0.3rem 0;
+}
+
+a {
+    color: #0078ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 </head>
 
 <body>
 
-    <div class="main-container">
-        <div class="top-div">
-    <h2>Hello!</h2>
-    <p>
-        Thank you for visiting my page. Below are some of the technologies I’m familiar with.
-        I hope you find this information about my skills useful.
-    </p>
-</div>
+    <section class="portfolio">
+    <div class="intro">
+        <h1>Hello!</h1>
+        <p>
+            Thank you for visiting my portfolio. Below are some of the technologies I’m familiar with
+            and examples of my work.
+        </p>
+    </div>
 
-<table class="skills-table">
-    <tr>
-        <td class="icon-cell">
-            <img src="./img/python.png" alt="Python logo">
-        </td>
-        <td>
-            <p><strong>Python Projects:</strong></p>
+    <div class="cards">
+        <div class="card">
+            <img src="./img/python.png" alt="Python logo" class="card-icon">
+            <h3>Python Projects</h3>
             <ul>
                 <li>Project 1</li>
                 <li>Project 2</li>
                 <li>Project 3</li>
             </ul>
-        </td>
-    </tr>
-    <tr>
-        <td class="icon-cell">
-            <img src="./img/r.png" alt="RPA projects icon">
-        </td>
-        <td>
-            <p>
-                Here are some of my RPA projects written in Python using Selenium:
-                <a href="https://github.com/kowi-kowi/RPA_projects" target="_blank" rel="noopener noreferrer">
-                    GitHub Repository
-                </a>
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td class="icon-cell">
-            <img src="./img/kaggle.png" alt="Kaggle logo">
-        </td>
-        <td>
-            <p>Check out my notebooks shared on Kaggle:</p>
-            <p>
-                <a href="https://www.kaggle.com/marylka/code" target="_blank" rel="noopener noreferrer">
-                    Kaggle Profile
-                </a>
-            </p>
-        </td>
-    </tr>
-</table>
+        </div>
 
+        <div class="card">
+            <img src="./img/r.png" alt="RPA logo" class="card-icon">
+            <h3>RPA Projects</h3>
+            <p>
+                Automation scripts written in Python with Selenium:
+                <a href="https://github.com/kowi-kowi/RPA_projects" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./img/kaggle.png" alt="Kaggle logo" class="card-icon">
+            <h3>Kaggle Notebooks</h3>
+            <p>
+                Explore my data analysis and machine learning notebooks on Kaggle:
+                <a href="https://www.kaggle.com/marylka/code" target="_blank" rel="noopener noreferrer">
+                    Visit my Kaggle
+                </a>
+            </p>
+        </div>
     </div>
+</section>
+
 
 </body>
 
 
 </html>
+
 
