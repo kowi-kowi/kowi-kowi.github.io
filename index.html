@@ -50,6 +50,10 @@
             object-fit: cover;
             /* Ensures the image is not distorted */
         }
+        p {
+            font-family: Arial, sans-serif;
+            color: gray;
+        }
     </style>
 </head>
 
@@ -57,41 +61,59 @@
 
     <div class="main-container">
         <div class="top-div">
-            Hello! <br> Thank you for visiting my page. Here are some of the technologies I am familiar with. Hope you
-            find this information about my skills useful.
-        </div>
+    <h2>Hello!</h2>
+    <p>
+        Thank you for visiting my page. Below are some of the technologies I’m familiar with.
+        I hope you find this information about my skills useful.
+    </p>
+</div>
 
-        <table>
-            <tr>
-                <td><img src="./img/rust.png" alt="Placeholder Image"></td>
-                <td>
-                    <p>TBD</p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="./img/python.png" alt="Placeholder Image"></td>
-                <td>
-                    <p>TBD</p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="./img/r.png" alt="Placeholder Image"></td>
-                <td>
-                    <p>TBD</p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="./img/kaggle.png" alt="Placeholder Image"></td>
-                <td>
-                    <p>Link to my notebooks shared on Kaggle</p>
-                    <p><a href='https://www.kaggle.com/marylka/code'>Kaggle link</a></p>
-                </td>
-            </tr>
+<table class="skills-table">
+    <tr>
+        <td class="icon-cell">
+            <img src="./img/python.png" alt="Python logo">
+        </td>
+        <td>
+            <p><strong>Python Projects:</strong></p>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="icon-cell">
+            <img src="./img/r.png" alt="RPA projects icon">
+        </td>
+        <td>
+            <p>
+                Here are some of my RPA projects written in Python using Selenium:
+                <a href="https://github.com/kowi-kowi/RPA_projects" target="_blank" rel="noopener noreferrer">
+                    GitHub Repository
+                </a>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="icon-cell">
+            <img src="./img/kaggle.png" alt="Kaggle logo">
+        </td>
+        <td>
+            <p>Check out my notebooks shared on Kaggle:</p>
+            <p>
+                <a href="https://www.kaggle.com/marylka/code" target="_blank" rel="noopener noreferrer">
+                    Kaggle Profile
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
 
-        </table>
     </div>
 
 </body>
 
 
 </html>
+
