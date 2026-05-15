@@ -1,260 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Kowalska - Portfolio</title>
+<html>
+	<head>
+		<title>Maria Kowalska Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
 
-    <style>
-        body {
-            font-family: "Inter", "Roboto", sans-serif;
-            background-color: #fafafa;
-            color: #222;
-            margin: 0;
-            padding: 2rem;
-        }
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
 
-        .portfolio {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Maria Kowalska</a></h1>
+							<p>Thank you for visiting my portfolio. Below are some of the technologies I’m familiar with and examples of my work.</p>
 
-        .intro {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/mariakowalska/"><span>Linkedin Profile</span></a></li>
+									<li><a class="icon brands fa-github" href="https://github.com/kowi-kowi"><span>Github Profile</span></a></li>
+									<li><a class="icon brands fa-kaggle" href="https://www.kaggle.com/marylka/code"><span>Kaggle Work</span></a></li>
+									<li><a class="icon brands fa-medium" href="https://medium.com/@kowi.db.kowi"><span>Medium articles</span></a></li>
+									
+								</ul>
+							</nav>
 
-        .intro h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
+					</div>
+				</section>
 
-        .intro p {
-            font-size: 1.1rem;
-            color: #555;
-        }
+			<!-- Features -->
+				<section id="features">
+					<div class="container">
+						<header>
+							<h2>Recent projects:</h2>
+						</header>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-        }
+								<!-- skopiuj ta sekcje na nowy projekt proj1 -->
+									<section>
+										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<header>
+											<h3>I 🫶 Strawberry 🍓 !</h3>
+										</header>
+										<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
+										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
+										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
+									</section>
 
-        .card {
-            background: #fff;
-            border-radius: 16px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-        }
+								<!-- proj2 -->
+									<section>
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Labour Law RAG assistant.</h3>
+										</header>
+										<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
+										I started it as a way to both test my responsive tools and sharpen up my coding
+										and design skills a bit.</p>
+									</section>
 
-        .card-icon {
-            width: 60px;
-            height: auto;
-            display: block;
-            margin: 0 auto 1rem auto;
-        }
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
 
-        .card h3 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
+								<!-- proj3 -->
+									<section>
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>RPA examples</h3>
+										</header>
+										<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
+										sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are built using these tools.</p>
+									</section>
 
-        .card p,
-        .card ul {
-            text-align: center;
-            color: #444;
-            font-size: 0.95rem;
-        }
+							</div>
+						</div>
+					</div>
+				</section>
 
-        .card ul {
-            list-style: none;
-            padding: 0;
-        }
+			
+			
 
-        .card ul li {
-            margin: 0.3rem 0;
-        }
+		</div>
 
-        a {
-            color: #0078ff;
-            font-weight: 500;
-            text-decoration: none;
-        }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* --- About Me Section --- */
-        .about {
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-            margin-top: 3rem;
-            line-height: 1.6;
-        }
-
-        .about h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            font-size: 1.6rem;
-        }
-
-        .about p {
-            color: #444;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        footer a {
-            color: #0078ff;
-        }
-    </style>
-</head>
-
-<body>
-
-    <section class="portfolio">
-        <div class="intro">
-            <h1>Hello!</h1>
-            <p>
-                Thank you for visiting my portfolio. Below are some of the technologies I’m familiar with
-                and examples of my work.
-            </p>
-        </div>
-
-        <div class="cards">
-            <div class="card">
-                <img src="./img/python.png" alt="Python logo" class="card-icon">
-                <h3>SupportWise AI Assistant</h3>
-                <p>
-                    intelligent assistant for classifying support tickets and automatically generating responses. The project demonstrates a practical application of GenAI and automation in the field of Customer Service:
-                    <a href="https://github.com/kowi-kowi/SD_Assistant" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-            </div>
-
-            <div class="card">
-                <img src="./img/python.png" alt="Python logo" class="card-icon">
-                <h3>Predictive analysis with automation (ETL + ML)</h3>
-                <p>
-                    Stock Market Sentiment Analysis with Automated ETL and ML Predictions: 
-                    <a href="https://github.com/kowi-kowi/StockPredition_ETL_ML" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./img/python.png" alt="Python logo" class="card-icon">
-                <h3>Fine-tuning a small language model (BERT)</h3>
-                <p>
-                    Fine-tuning the Polish HerBERT model for question–answering tasks about medicines (based on URPL data):<br/>
-                    <a href="https://github.com/kowi-kowi/MedsDescription" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </p>
-            </div>
-
-
-            <div class="card">
-                <img src="./img/r.png" alt="RPA logo" class="card-icon">
-                <h3>RPA Projects</h3>
-                <p>
-                    Automation scripts written in Python with Selenium, Beautifulsoup4, rest API:
-                    <a href="https://github.com/kowi-kowi/RPA_projects" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./img/kaggle.png" alt="Kaggle logo" class="card-icon">
-                <h3>Kaggle Notebooks</h3>
-                <p>
-                    Explore my data analysis and machine learning notebooks on Kaggle:
-                    <a href="https://www.kaggle.com/marylka/code" target="_blank" rel="noopener noreferrer">
-                        Visit my Kaggle
-                    </a>
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./img/jupyter-python_logo.PNG" alt="Jupyter - Python logo" class="card-icon">
-                <h3>Transformer failure analysis</h3>
-                <p>
-                    DataScience in Business postgraduation studies project:
-                    <a href="https://github.com/kowi-kowi/project-transformer" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </p>
-            </div>
-        </div>
-
-        <!--  About Me Section -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                With a background spanning software engineering, customer service technology management, and a deep
-                passion for machine learning and data analysis, I’ve built my career at the intersection of innovation
-                and efficiency.
-            </p>
-            <p>
-                I began as a software developer, working with Groovy, Grails, Python, and Selenium to enhance
-                eProcurement platforms and optimize customer service processes.
-            </p>
-            <p>
-                Over time, I transitioned into leadership roles that combined technical expertise with strategic
-                thinking. As a Development Manager for Customer Service, I led the adoption of automation and advanced
-                ticketing integrations that significantly improved operational performance.
-            </p>
-            <p>
-                These experiences strengthened my belief in technology’s power to transform business operations and
-                elevate user experience. Currently, as a Software Engineer, I focus on migrating and optimizing
-                eProcurement technologies with modern frameworks.
-            </p>
-            <p>
-                My growing interest in machine learning and analytics reflects my commitment to continuous learning and
-                innovation. Ultimately, I strive to merge software engineering and data science to create technologies
-                that are not only efficient but truly intuitive.
-            </p>
-        </section>
-
-        <footer>
-            <p>Connect with me on 
-                <a href="https://www.linkedin.com/in/mariakowalska/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
-                • 
-                <a href="https://github.com/kowi-kowi" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </p>
-        </footer>
-    </section>
-
-</body>
-
+	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
